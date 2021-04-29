@@ -12,10 +12,20 @@ public class Occurrence {
 
 		character.close();
 
+		char string[] = n.toCharArray();
+		int count = 1;
+
 		for (int i = 0; i < n.length(); i++) {
 
-			System.out.println("Occurrence of a:" + n.length());
+			count = 1;
+			for (int j = i + 1; j < n.length(); j++) {
 
+				if (string[i] == string[j]) {
+
+					count++;
+				}
+			}
+			System.out.println("Occurence of " + string[i] + " is: " + count);
 		}
 
 	}
