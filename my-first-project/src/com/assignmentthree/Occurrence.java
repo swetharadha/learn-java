@@ -13,12 +13,12 @@ public class Occurrence {
 		character.close();
 
 		char string[] = n.toCharArray();
-		int count = 1;
+		int count;
 
 		for (int i = 0; i < n.length(); i++) {
 
-			count = 1;
-			for (int j = i + 1; j < n.length(); j++) {
+			count = 0;
+			for (int j = 0; j < n.length(); j++) {
 
 				if (string[i] == string[j]) {
 
