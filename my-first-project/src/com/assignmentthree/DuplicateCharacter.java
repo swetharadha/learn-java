@@ -14,7 +14,7 @@ public class DuplicateCharacter {
 
 		char string[] = n.toCharArray();
 
-		System.out.println("Duplicate Characters are:");
+		System.out.println("Duplicate Characters here are :");
 
 		for (int i = 0; i < n.length(); i++) {
 
